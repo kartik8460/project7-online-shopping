@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 20px 60px;
+}
+
+.nav-items h5{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.nav-items h5:hover {
+    color: #fe5e35;
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-right: 250px;
+    padding-left: 60px;
+}
+
+.left-section{
+    margin-top: 75px;
+}
+
+.left-section h3 {
+    font-size: 50px;
+}
+
+.left-section h3 img{
+    vertical-align: text-top;
+}
+
+.left-section h1 {
+    font-size: 90px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.sub-headlines {
+    padding: 30px 0 30px 100px;
+}
+
+.sub-headline {
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.sub-headline img {
+    background-color: #fe5e35;
+    padding: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.text {
+    color: #aaaaaa;
+    padding: 25px 0;
+}
+
+.action-btns {
+    padding-top: 25px;
+}
+
+.action-btn {
+    background-color: #fe5e35;
+    padding: 20px 40px;
+    border: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    
+}
+
+.action-btns .action-btn {
+    margin-right: 30px;
+}
+
+.right-section {
+    position: relative;
+    text-align: center;
+}
+
+.headphone-div img:first-child {
+    position: absolute;
+    left: -50px;
+    bottom: 200px;
+}
+
+.discount-content {
+    position: absolute;
+    left: 0px;
+    bottom: 250px;
+    color: #FFFFFF;
+}
+
+.discount-content h1 {
+    font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.dot {
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.yellow-dot {
+    background-color: #fbd104;
+}
+
+.tomato-dot {
+    background-color: #fe5e35;
+}
+
+.black-dot {
+    background-color: #000000;
+}
+
+.right-section .action-btn {
+    margin-top: 15px;
+}
