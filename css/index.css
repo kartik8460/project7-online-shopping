@@ -13,7 +13,9 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 60px 20px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px 25px;
 }
 
 .nav-items h5{
@@ -28,14 +30,20 @@ nav {
 }
 
 .intro-section {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    margin-right: 250px;
-    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1.25fr 1fr;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .left-section{
     margin-top: 75px;
+}
+
+.left-section p {
+    margin-right: 200px;
 }
 
 .left-section h3 {
@@ -75,7 +83,22 @@ nav {
 
 .action-btns {
     padding-top: 25px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
 }
+
+.action-btns div:first-child {
+    margin-right: 30px;
+}
+
+.action-btns div:nth-child(3) {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+}
+
 
 .action-btn {
     background-color: #fe5e35;
@@ -84,34 +107,45 @@ nav {
     font-size: 25px;
     color: #FFFFFF;
     border-radius: 50px;
-    
 }
 
-.action-btns .action-btn {
-    margin-right: 30px;
-}
 
 .right-section {
-    position: relative;
     text-align: center;
 }
 
-.headphone-div img:first-child {
-    position: absolute;
-    left: -50px;
-    bottom: 200px;
+.headphone-div {
+    position: relative;
+}
+.headphones-img {
+    width: 600px;
 }
 
 .discount-content {
     position: absolute;
-    left: 0px;
-    bottom: 250px;
-    color: #FFFFFF;
+    bottom: 80px;
+    left: -60px;
+    color: #ffffff;
 }
 
-.discount-content h1 {
-    font-size: 50px;
+.discount-img {
+    width: 180px;
+}
+
+.discount {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+
+.discount h1{
     font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+}
+
+.discount h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
 }
 
 .dot {
@@ -135,4 +169,97 @@ nav {
 
 .right-section .action-btn {
     margin-top: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-items {
+        display: none;
+    }
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+    .headphone-div {
+        height: fit-content;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left-section {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sub-headlines {
+        text-align: left;
+    }
+    
+    .action-btns div:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .action-btns div:nth-child(3) {
+        width: fit-content;
+        margin-left: 0;
+    }
+    .action-btns {
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .left-section p {
+        margin-right: 0;
+    }
+    .sub-headlines {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .headphones-img {
+        width: 300px;
+    }
+
+    .discount {
+        bottom: 30px;
+        left: 24px;
+    }
+
+    .discount-content {
+        bottom: 40px;
+        left: -30px;
+    }
+
+    .discount-img {
+        width: 90px;
+    }
+
+    .discount h4{
+        font-size: 10px;
+    }
+
+    .discount h1 {
+        font-size: 24px;
+    }
+
+    .left-section h1 {
+        font-size: 45px;
+    }
+
+    .left-section h3 {
+        font-size: 25px;
+    }
+    
+    .action-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 50px;
+        margin: 10px 0;
+    }
+
+    .action-btns {
+        flex-direction: column;
+    }
+    
+    .action-image {
+        display: none;
+    }
 }
